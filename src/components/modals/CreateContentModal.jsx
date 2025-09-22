@@ -26,7 +26,7 @@ export const CreateContentModal = ({ isOpen, onClose, userId }) => {
     setIsLoading(true);
 
     try {
-      const imageUrl = formData.imageUrl || `https://via.placeholder.com/300x200?text=${encodeURIComponent(formData.title)}`;
+      const imageUrl = formData.imageUrl ||  "https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/news/fi/674eb99f867a5.webp";
 
       addContent({
         ...formData,
